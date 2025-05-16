@@ -15,7 +15,7 @@ public class DataMahasiswa {
         this.email = email;
     }
     
-    // Getter methods
+    // Method setter & getter
     public String getNamaLengkap() {
         return namaLengkap;
     }
