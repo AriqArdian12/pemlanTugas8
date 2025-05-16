@@ -133,7 +133,7 @@ public class FormPendaftaranMahasiswa extends JFrame {
         return isValid;
     }
     
-    // Menampilkan dialog konfirmasi
+    // Menampilkan teks konfirmasi
     private void showConfirmationDialog() {
         int option = JOptionPane.showConfirmDialog(this, 
                 "Apakah Anda yakin data yang Anda isi sudah benar?", 
@@ -142,7 +142,7 @@ public class FormPendaftaranMahasiswa extends JFrame {
                 JOptionPane.QUESTION_MESSAGE);
         
         if (option == JOptionPane.OK_OPTION) {
-            // Jika OK, buat objek data mahasiswa dan kirim ke tampilan data
+            // Jika memilih OK, buat objek data mahasiswa dan kirim ke tampilan data
             DataMahasiswa data = new DataMahasiswa(
                 txtNamaLengkap.getText(),
                 txtTanggalLahir.getText(),
@@ -155,6 +155,6 @@ public class FormPendaftaranMahasiswa extends JFrame {
             // Tampilkan frame data mahasiswa
             new DataMahasiswaFrame(data, this).setVisible(true);
         }
-        // Jika CANCEL, kembali ke form tanpa melakukan apa-apa
+        // Jika memilih CANCEL, kembali ke form tanpa melakukan apa-apa
     }
 }
